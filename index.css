@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  :root {
+    --background: hsl(222.2 84% 4.9%);
+    --foreground: hsl(210 40% 98%);
+    
+    --card-bg: hsla(223, 57%, 25%, 0.3);
+    --card-border: hsla(210, 40%, 98%, 0.2);
+    --card-hover-bg: hsla(223, 57%, 30%, 0.5);
+
+    --sidebar-card-bg: hsla(223, 30%, 35%, 0.4);
+    --sidebar-card-hover-bg: hsla(223, 30%, 40%, 0.6);
+
+    --primary: hsl(221.2 83.2% 53.3%);
+    --primary-foreground: hsl(210 40% 98%);
+    
+    --muted-foreground: hsl(215 20.2% 65.1%);
+
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
